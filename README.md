@@ -26,3 +26,9 @@
 
 [ Python 流程控制：if 判斷式](https://www.youtube.com/watch?v=A93BsHB-lWo&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=6)
 - Python_05.py
+
+[Python 流程控制：迴圈基礎，while 迴圈、for 迴圈 ](https://www.youtube.com/watch?v=szaAeLt_49U&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=7)
+- Python_06.py
+
+[Python 流程控制：迴圈進階控制，break、continue、else 命令](https://www.youtube.com/watch?v=yBXlwOmLqZ4&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=8)
+- Python_07.py
