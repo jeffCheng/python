@@ -15,7 +15,6 @@
 [Python 變數與資料型態](https://www.youtube.com/watch?v=FMruNSjHOzQ&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=2)
 - Python_01.py
 
-
 [Python 數字、字串的基本運算](https://www.youtube.com/watch?v=bLRa4TZ99aY&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=3)
 - Python_02.py
 
@@ -24,3 +23,6 @@
 
 [Python 集合、字典的基本運算 - Set、Dictionary](https://www.youtube.com/watch?v=L3-KuGYhw78&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=5)
 - Python_04.py
+
+[ Python 流程控制：if 判斷式](https://www.youtube.com/watch?v=A93BsHB-lWo&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=6)
+- Python_05.py
