@@ -139,3 +139,7 @@ data["name"]="New Name1"  #修改變數中資料
 with open("config.json","w") as file4:
     json.dump(data,file4) #最後，把最新的資料複寫回檔案中
 ```
+
+[Python 亂數與統計模組](https://www.youtube.com/watch?v=-xwCu6PN1jU&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=14)
+- Python_13.py
+
