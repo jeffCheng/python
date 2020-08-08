@@ -32,3 +32,6 @@
 
 [Python 流程控制：迴圈進階控制，break、continue、else 命令](https://www.youtube.com/watch?v=yBXlwOmLqZ4&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=8)
 - Python_07.py
+
+[Python 函式基礎：定義並呼叫函式](https://www.youtube.com/watch?v=7qKFvUVpQXg)
+- Python_08.py
