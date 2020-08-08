@@ -41,3 +41,34 @@
 
 [Python Module 模組的載入與使用](https://www.youtube.com/watch?v=Et0DjY2cGiE&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=11)
 - Python_10.py
+
+[Python Package 封包的設計與使用](https://www.youtube.com/watch?v=GGp-7VHgsKk&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=12)
+- Python_11.py
+
+```
+<包含模組的資料夾>
+用來整理、分類模組程式
+
+＊封包＊
+<專案檔案配置>
+- 專案檔案夾
+  - 主程式.py
+  - 封包資料夾
+    - __init__.py # 有這個程式的資料夾才會被當成封包資料夾
+    - 模組一.py
+    - 模組二.py
+
+<專案檔案配置範例>
+- 專案檔案夾
+  - main.py
+  - geometry
+    - __init__.py 
+    - point.py
+    - line.py
+
+
+＊使用封包＊
+<基本語法>
+import 封包名稱.模組名稱
+import 封包名稱.模組名稱 as 模組別名
+```
