@@ -38,3 +38,6 @@
 
 [Python 函式參數詳解：參數預設值、名稱對應、任意長度參數](https://www.youtube.com/watch?v=OOJmhezLd4o&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=10)
 - Python_09.py
+
+[Python Module 模組的載入與使用](https://www.youtube.com/watch?v=Et0DjY2cGiE&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=11)
+- Python_10.py
