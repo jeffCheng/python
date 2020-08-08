@@ -143,3 +143,54 @@ with open("config.json","w") as file4:
 [Python 亂數與統計模組](https://www.youtube.com/watch?v=-xwCu6PN1jU&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=14)
 - Python_13.py
 
+[Python 網路連線程式、公開資料串接 By 彭彭](https://www.youtube.com/watch?v=sUzR3QVBKIo&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=15)
+- Python_14.py
+
+```
+＊網路連線＊
+<載入模組>
+import urllib.request
+
+<下載特定網址資料>
+import urllib.request as request
+with request.urlopen(網址) as response:
+  data = response.read()
+print(data)
+
+公開資料：
+適合的資料來源：台北市政府公開資料
+
+確認資料格式：  JSON, CSV, 或其他格式
+解讀JSON格式： 使用內建的json模組
+
+# 網路連線
+import urllib.request as request
+src = "https://www.ntu.edu.tw"
+with request.urlopen(src) as response:
+  # 取得台灣大學網站的原始碼
+  # .decode("utf-8") => 顯示中文，不然本來是亂碼
+  data = response.read().decode("utf-8")
+print(data)
+>>> 跑出NTU的html
+
+
+# 串接、擷取公開資料
+# data.taipei
+import urllib.request as request
+import json
+src = "資料網址請複製貼上"
+with request.urlopen(src) as response:
+  data = json.load(response) # 利用 json 模組處理 json 資料格式
+print(data)
+>>> 一堆
+# 將公司名稱列表出來
+clist = data["result"]["results"]
+for company in clist:
+  print(company["公司名稱"])
+
+# 檔案寫入公司名稱+\n換行符號
+clist = data["result"]["results"]
+with open("data.txt", "w", encoding="utf-8") as file:
+  for company in clist:
+    file.write(company["公司名稱"]+"\n")
+```
