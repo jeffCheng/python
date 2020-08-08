@@ -35,3 +35,6 @@
 
 [Python 函式基礎：定義並呼叫函式](https://www.youtube.com/watch?v=7qKFvUVpQXg)
 - Python_08.py
+
+[Python 函式參數詳解：參數預設值、名稱對應、任意長度參數](https://www.youtube.com/watch?v=OOJmhezLd4o&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=10)
+- Python_09.py
