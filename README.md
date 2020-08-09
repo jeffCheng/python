@@ -282,3 +282,6 @@ for title in titles:
 pip3 install beautifulsoup4
 ```
 
+[Python 網路爬蟲 Web Crawler 教學 - Cookie 操作實務](https://www.youtube.com/watch?v=BEA7F9ExiPY&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=20)
+ - Python_19.py
+
