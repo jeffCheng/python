@@ -143,7 +143,7 @@ with open("config.json","w") as file4:
 [Python 亂數與統計模組](https://www.youtube.com/watch?v=-xwCu6PN1jU&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=14)
 - Python_13.py
 
-[Python 網路連線程式、公開資料串接 By 彭彭](https://www.youtube.com/watch?v=sUzR3QVBKIo&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=15)
+[Python 網路連線程式、公開資料串接](https://www.youtube.com/watch?v=sUzR3QVBKIo&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=15)
 - Python_14.py
 
 ```
@@ -194,3 +194,12 @@ with open("data.txt", "w", encoding="utf-8") as file:
   for company in clist:
     file.write(company["公司名稱"]+"\n")
 ```
+
+[Python 類別的定義與使用 - Class Attributes](https://www.youtube.com/watch?v=uPKgQ3FoVtY&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=16)
+- Python_15.py
+
+[Python 實體物件的建立與使用 - 上篇 - 實體屬性 Instance Attributes ](https://www.youtube.com/watch?v=Lr5N2r1rmtM&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=17)
+- Python_16.py
+
+ [Python 實體物件的建立與使用 - 下篇 - 實體方法 - Instance Methods ](https://www.youtube.com/watch?v=MZtTClJ74NU&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=18)
+ - Python_17.py
