@@ -285,3 +285,170 @@ pip3 install beautifulsoup4
 [Python 網路爬蟲 Web Crawler 教學 - Cookie 操作實務](https://www.youtube.com/watch?v=BEA7F9ExiPY&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=20)
  - Python_19.py
 
+
+[Python Pandas 資料分析 - 基礎教學](https://www.youtube.com/watch?v=5QZqzKCDCQ4&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=23)
+
+```
+# ---------------------------------------
+# CH24.Pandats資料分析 - Series單維度資料
+# ---------------------------------------
+＊Series＊
+《單維度的資料》就像是一個列表、或是試算表中直向的欄位資料
+
+《建立Series》
+import pandas as pd   # 載入Pandas模組
+pd.Series(列表)        # 以列表資料為底，建立Series
+
+
+＊資料索引index＊
+《資料的獨立編號》就像試算表中最左邊的編號
+
+《內建索引》
+import pandas as pd       # 載入Pandas模組
+pd.Series(資料列表)        # 以列表資料為底，建立Series
+
+《自訂索引》
+import pandas as pd               # 載入Pandas模組
+pd.Series(資料列表,index=索引列表)   # 以列表資料為底，建立Series
+
+
+＊觀察資料＊
+《資料型態》
+import pandas as import pd
+data = pd.Series(資料列表)
+print(data.dtype)          # 印出dtype屬性
+
+《資料數量》
+import pandas as pd
+data = pd.Series(資料列表)
+print(data.size)           # 印出size屬性
+
+《資料索引》
+import pandas as pd
+data = pd.Series(資料列表)
+print(data.index)          # 印出index屬性
+
+
+＊取得資料＊
+《依據順序取值》
+import pandas as pd
+data = pd.Series(資料列表)
+print(data[1])             # 取得資料data[順序]
+
+《根據索引取值》
+import pandas as pd
+data = pd.Series(資料列表)
+print(data[索引index])         # 取得資料data[索引index]
+
+
+＊數字運算＊
+《數學、統計相關》
+import pandas as pd
+data = pd.Series(3,10,20,5,-12))
+# 各種數學、統計運算
+print(data.sum(),data.max(),data.prod())
+print(data.mean(),data.median(),data.std())
+print(data.nlargest(3),data.nsmallest(2))
+# nlargest(3) => 取前三大數字
+# nsmallest(2) => 取最小的兩個數字
+
+
+＊字串運算＊
+《字串操作相關》
+import pandas as pd
+data = pd.Series(["您好","Python","Pandas"])
+# 各種字串操作，都定義在str底下
+print(data.str.lower(),data.str.upper(),data.str.len())
+print(data.str.cat(sep=","),data.str.contains("P"))
+print(data.str.replace("您好","Hello"))
+# data.str.cat(sep=",") => 把每個字串都用,串接起來
+# data.str.replace("您好","Hello") => Hello取代您好
+
+# -------------
+# 載入pandas模組
+import pandas as pd
+# 資料索引
+data = pd.Series([5,4,-2,3,7], index=["a","b","c","d","e"])
+print(data)
+# >>> a    5
+# >>> b    4
+# >>> c   -2
+# >>> d    3
+# >>> e    7
+# >>> dtype: int64
+# 觀察資料
+print("資料型態", data.dtype)
+print("資料數量", data.size)
+print("資料索引", data.index)
+# >>> 資料型態 int64
+# >>> 資料數量 5
+# >>> 資料索引 Index(['a', 'b', 'c', 'd', 'e'], dtype='object')
+
+data = pd.Series([5,4,-2,3,7], index=["a","b","c","d","e"])
+# 取得資料：根據順序、根據索引index
+print(data[2],data[0])
+print(data["e"],data["d"])
+# >>> -2 5
+# >>> 7 3
+
+# 數字運算：基本、統計、順序
+print("總和",data.sum())       # >>> 總和 17
+print("最大值",data.max())     # >>> 最大值 7
+print("標準差",data.std())     # >>> 標準差 3.361547262794322
+print("中位數",data.median())  # >>> 中位數 4.0
+print("最大的三個數",data.nlargest(3))
+# >>> 最大的三個數 e    7
+# >>> a    5
+# >>> b    4
+# >>> dtype: int64
+print("累積連乘",data.prod())
+print("平均值",data.mean())
+# >>> -840
+# >>> 3.4
+print("最小的兩個數",data.nsmallest(2))
+# >>> 最小的三個數 c   -2
+# >>> d    3
+# >>> b    4
+# >>> dtype: int64
+
+# 字串運算：基本、串接、搜尋、取代
+import pandas as pd
+data = pd.Series(["您好","Python","Pandas"])
+print(data.str.lower())  # 全部變小寫
+# >>> 0        您好
+# >>> 1    python
+# >>> 2    pandas
+# >>> dtype: object
+
+print(data.str.upper())  # 全部變大寫
+# >>> 0        您好
+# >>> 1    PYTHON
+# >>> 2    PANDAS
+# >>> dtype: object
+
+print(data.str.len())  # 算出每個字串的長度
+# >>> 0    2
+# >>> 1    6
+# >>> 2    6
+# >>> dtype: int64
+
+print(data.str.cat(sep="-"))  # 把字串串起來，可以自訂串接的符號
+# >>> 您好-Python-Pandas
+
+print(data.str.contains("P"))  # 判斷每個字串是否包含特定的字元
+# >>> 0    False
+# >>> 1     True
+# >>> 2     True
+# >>> dtype: bool
+print(data.str.replace("您好","哩厚"))  # 後面的字串取代前方的
+# >>> 0        哩厚
+# >>> 1    Python
+# >>> 2    Pandas
+# >>> dtype: object
+```
+
+[Python Pandas 資料分析 - Series 單維度資料](https://www.youtube.com/watch?v=175ZZC3Hr0Y&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=24)
+
+[Python Pandas 資料分析 - DataFrame 雙維度資料](https://www.youtube.com/watch?v=Krj-50BNo9E&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=25)
+
+[Python Pandas 資料分析 - 篩選資料](https://www.youtube.com/watch?v=w-V7zvsBlZw&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=26)
